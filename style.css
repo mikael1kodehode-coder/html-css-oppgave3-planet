@@ -13,8 +13,8 @@ html {
 }
 
 body {
-  background-color: black;
-  color: white;
+  background-color: rgb(255, 251, 240);
+  color: whitesmoke;
   line-height: 1.5;
   display: flex;
   flex-direction: column;
@@ -25,35 +25,36 @@ body {
 /* Header */
 
 header {
-  /* border: 1px solid; */
-  width: 70%;
+  background-color: #9dac9d;
+  color: whitesmoke;
+  width: 100%;
 
   display: flex;
-  background-color: rgb(26, 24, 24);
-  border-radius: 0 0 8px 8px;
+  justify-content: center;
+
   padding: 5px;
-  position: sticky;
-  top: 0;
-}
-
-.container-image {
-  display: flex;
-  /* border: 1px solid; */
-}
-
-img {
-  height: 90px;
-  width: auto;
 }
 
 nav {
+  background-color: #9dac9d;
+  width: 100%;
+
   display: flex;
   justify-content: center;
   align-items: end;
+
+  position: sticky;
+  top: 0;
+
   margin: auto;
   margin-bottom: 0px;
-  /* border: 1px solid; */
+  border-bottom: 1px solid white;
   padding: 5px;
+}
+
+nav img {
+  height: 60px;
+  width: auto;
 }
 
 a {
@@ -81,9 +82,12 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 8px;
 
-  background-color: rgba(26, 24, 24, 0.5);
+  color: whitesmoke;
+  background-color: #9dac9d;
   margin-top: 20px;
+  margin-bottom: 20px;
   width: 100%;
 }
 
@@ -100,17 +104,34 @@ main {
   text-align: center;
 }
 
+.mercury {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.mercury img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+}
+
+.mercury p {
+  padding: 20px;
+  max-width: 80ch;
+}
+
 .orbit {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-
-  margin: 20px;
+  margin-top: 20px;
 }
 
 .orbit p {
-  padding: 20px;
   max-width: 80ch;
 }
 
@@ -121,4 +142,26 @@ iframe {
   min-width: 560px;
   overflow: none;
   border-radius: 8px;
+  margin: 20px;
+}
+
+/* Surface */
+
+.surface img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+}
+
+.surface {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.surface p {
+  padding: 20px;
+  max-width: 80ch;
 }
